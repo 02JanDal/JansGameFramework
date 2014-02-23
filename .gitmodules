@@ -1,3 +1,6 @@
 [submodule "qhttpserver"]
 	path = qhttpserver
 	url = git@github.com:nikhilm/qhttpserver.git
+[submodule "libnoise"]
+	path = libnoise
+	url = git@github.com:qknight/libnoise.git

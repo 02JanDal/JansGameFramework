@@ -25,6 +25,9 @@ void messageHandler(QtMsgType type, const QMessageLogContext &context, const QSt
 {
 	switch (type)
 	{
+	case QtTraceMsg:
+		fprintf(stderr, "[%s][TRACE] %s\n", qPrintable(QDateTime::currentDateTime().toString(Qt::RFC2822Date)), qPrintable(msg));
+		break;
 	case QtDebugMsg:
 		fprintf(stderr, "[%s][%s][DEBUG] %s\n", qPrintable(QDateTime::currentDateTime().toString(Qt::RFC2822Date)), context.category, qPrintable(msg));
 		break;

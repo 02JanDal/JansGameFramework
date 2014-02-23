@@ -18,5 +18,8 @@ if(CMAKE_BUILD_TYPE STREQUAL "Debug")
     add_definitions(-DDEBUG_BUILD=1)
 endif()
 
+include(qhttpserver.cmake)
+add_subdirectory(libnoise)
+
 add_subdirectory(client)
 add_subdirectory(server)
