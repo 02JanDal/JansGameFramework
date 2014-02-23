@@ -265,7 +265,7 @@ void BasePluginManager::discoverPlugins()
 
 BaseArchivePlugin::CommandCallback BaseArchivePlugin::CommandCallback::fromJson(const QJsonObject &object)
 {
-
+	return CommandCallback();
 }
 bool BaseArchivePlugin::CommandCallback::call(const QString &user, const QString &command, const QString &full)
 {
@@ -273,7 +273,7 @@ bool BaseArchivePlugin::CommandCallback::call(const QString &user, const QString
 }
 BaseArchivePlugin::PermissionCallback BaseArchivePlugin::PermissionCallback::fromJson(const QJsonObject &object)
 {
-
+	return PermissionCallback();
 }
 BasePluginInterface::Permission BaseArchivePlugin::PermissionCallback::call(const QString &user, const QString &permission) const
 {
