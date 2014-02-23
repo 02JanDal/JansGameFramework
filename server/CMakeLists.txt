@@ -22,5 +22,5 @@ set(JGF_SRCS
 
 add_library(JansGameFramework STATIC ${JGF_SRCS})
 qt5_use_modules(JansGameFramework Core Qml Network Sql)
-target_link_libraries(JansGameFramework QHttpServer noise-static)
-include_directories(${CMAKE_SOURCE_DIR}/libnoise/src)
+target_link_libraries(JansGameFramework QHttpServer noise-static qtlua)
+include_directories(${CMAKE_SOURCE_DIR}/libnoise/src ${CMAKE_CURRENT_SOURCE_DIR}/libqtlua)

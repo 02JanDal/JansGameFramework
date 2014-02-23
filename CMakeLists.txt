@@ -19,6 +19,7 @@ if(CMAKE_BUILD_TYPE STREQUAL "Debug")
 endif()
 
 include(qhttpserver.cmake)
+add_subdirectory(libqtlua)
 add_subdirectory(libnoise)
 
 add_subdirectory(client)
